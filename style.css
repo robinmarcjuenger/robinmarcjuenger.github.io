@@ -173,3 +173,32 @@ footer.site a { color: var(--muted); }
     --gold: #D9A55F;
   }
 }
+
+/* Language switch, top right. Text rather than flags: a language is not a
+   country, and German is not only spoken in Germany. */
+.langswitch {
+  margin-left: auto;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: 13px;
+}
+
+.langswitch a {
+  color: var(--muted);
+  text-decoration: none;
+  padding: 3px 8px;
+  border-radius: 7px;
+  font-weight: 600;
+}
+
+.langswitch a:hover { color: var(--bronze); background: var(--paper-deep); }
+
+.langswitch a.active {
+  color: var(--paper);
+  background: var(--gold);
+}
+
+@media (prefers-color-scheme: dark) {
+  .langswitch a.active { color: #23201B; }
+}
