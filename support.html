@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support, RMJ4PLAY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="brand" href="index.html">RMJ4PLAY</a>
+    <span class="tagline">Mac apps by Robin Marc Jünger</span>
+  </header>
+
+  <nav class="site">
+    <a href="index.html">Apps</a>
+    <a href="support.html">Support</a>
+    <a href="privacy.html">Privacy</a>
+    <a href="impressum.html">Impressum</a>
+  </nav>
+
+  <h1>Support</h1>
+  <p class="lede">
+    Questions, bugs, and feature requests all go to the same place. These are
+    small apps made by one person, so answers come from me directly.
+  </p>
+
+  <div class="note">
+    <strong>Write to <a href="mailto:rmj4play@gmail.com">rmj4play@gmail.com</a></strong><br>
+    Please include which app you are using, the version number from the
+    app's About window, and your macOS version. It makes a fix much faster.
+  </div>
+
+  <h2>Common questions</h2>
+
+  <h3>Where is my data?</h3>
+  <p>
+    On your Mac, and nowhere else. None of these apps upload anything or need
+    an account. See the <a href="privacy.html">privacy page</a>.
+  </p>
+
+  <h3>Do I pay again for updates?</h3>
+  <p>
+    No. These are one-time purchases with no subscription.
+  </p>
+
+  <h3>Loopetize, my loop does not repeat in the game</h3>
+  <p>
+    Loop points travel as tags inside the file, and not every format can carry
+    them. OGG and M4A carry LOOPSTART and LOOPLENGTH, which is what RPG Maker
+    reads. WAV carries a sampler chunk instead, which Unity and audio
+    middleware read. AIFF, FLAC, ALAC, and CAF cannot carry loop points at all.
+    For a desktop RPG Maker build, export OGG.
+  </p>
+
+  <h3>Loopetize, the recording is much quieter than the music</h3>
+  <p>
+    That is expected. Microphones record with headroom, while finished music is
+    normalised close to full scale. Select the recorded clip, open Volume, and
+    press Normalize.
+  </p>
+
+  <h3>The app says it cannot be opened because the developer cannot be verified</h3>
+  <p>
+    This appears on builds that are not yet notarised. Right click the app,
+    choose Open, and confirm once.
+  </p>
+
+  <h3>Which macOS do I need?</h3>
+  <p>
+    macOS 13 Ventura or later.
+  </p>
+
+  <h2>Reporting a bug</h2>
+  <p>
+    What helps most: what you did, what you expected, and what happened
+    instead. If the app quit, the crash report from Console under User Reports
+    is very useful. Screenshots are welcome.
+  </p>
+
+  <p class="lang">Deutsch</p>
+  <p>
+    Fragen, Fehlermeldungen und Wünsche gerne auf Deutsch an
+    <a href="mailto:rmj4play@gmail.com">rmj4play@gmail.com</a>. Bitte nennen
+    Sie die App, die Versionsnummer aus dem Über-Fenster und Ihre
+    macOS-Version.
+  </p>
+
+  <footer class="site">
+    © 2026 RMJ4PLAY - Robin Marc Jünger ·
+    <a href="index.html">Apps</a> ·
+    <a href="privacy.html">Privacy</a> ·
+    <a href="impressum.html">Impressum</a>
+  </footer>
+
+</div>
+</body>
+</html>

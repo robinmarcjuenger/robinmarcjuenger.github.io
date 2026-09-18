@@ -1,0 +1,175 @@
+/* RMJ4PLAY site styles.
+   Self contained on purpose: no fonts, scripts, or trackers are loaded from
+   anywhere, so the site itself collects nothing. */
+
+:root {
+  --paper: #FBF7EE;
+  --paper-card: #F6EFE0;
+  --paper-deep: #EFE5D0;
+  --gold: #9A6A2F;
+  --gold-soft: #C89B5E;
+  --ink: #3A2D20;
+  --bronze: #7E5421;
+  --olive: #6C6F44;
+  --line: #E3D6BC;
+  --muted: #8A7A5F;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+header.site {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+}
+
+.brand {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--bronze);
+  text-decoration: none;
+}
+
+.tagline {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+nav.site {
+  margin: 20px 0 40px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav.site a {
+  color: var(--bronze);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+nav.site a:hover { color: var(--gold); text-decoration: underline; }
+
+h1 {
+  font-size: 30px;
+  line-height: 1.2;
+  margin: 0 0 8px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 19px;
+  margin: 34px 0 10px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 15px;
+  margin: 22px 0 6px;
+  font-weight: 700;
+  color: var(--bronze);
+}
+
+p { margin: 0 0 14px; }
+
+.lede {
+  font-size: 17px;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+a { color: var(--gold); }
+
+.apps { display: grid; gap: 14px; margin: 28px 0 8px; }
+
+.app {
+  background: var(--paper-card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 18px 20px;
+}
+
+.app h2 { margin: 0 0 4px; font-size: 18px; }
+
+.app p { margin: 0; color: var(--muted); font-size: 14.5px; }
+
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--olive);
+  background: rgba(108, 111, 68, 0.12);
+  border-radius: 999px;
+  padding: 3px 9px;
+  margin-left: 8px;
+  vertical-align: 2px;
+}
+
+.note {
+  background: var(--paper-deep);
+  border-radius: 12px;
+  padding: 16px 18px;
+  margin: 24px 0;
+  font-size: 14.5px;
+}
+
+address {
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.lang {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 36px 0 10px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+footer.site {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  font-size: 13px;
+  color: var(--muted);
+}
+
+footer.site a { color: var(--muted); }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #23201B;
+    --paper-card: #2C2820;
+    --paper-deep: #332E25;
+    --ink: #EFE6D6;
+    --bronze: #D4A868;
+    --line: #453D30;
+    --muted: #A2957E;
+    --gold: #D9A55F;
+  }
+}
