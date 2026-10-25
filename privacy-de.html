@@ -28,7 +28,7 @@
   <h1>Datenschutz</h1>
   <p class="lede">
     Gilt für Loopetize, Pocketize: PDF Compressor, Pocketize: Video
-    Compressor, Rememberize und diese Website. Stand 23. Oktober 2026.
+    Compressor, Rememberize und diese Website. Stand 25. Oktober 2026.
   </p>
 
   <div class="note">
@@ -50,15 +50,20 @@
     Die gesamte Verarbeitung findet lokal auf Ihrem Gerät statt. Dateien werden
     nur an den von Ihnen gewählten Orten gelesen und gespeichert. Rememberize
     speichert Notizen als einfache Markdown-Dateien in einem Ordner Ihrer Wahl,
-    damit sie auch ohne die App lesbar bleiben.
+    damit sie auch ohne die App lesbar bleiben. Notizen, die Sie verschlüsseln,
+    werden als .md.enc-Dateien gespeichert und mit AES-256 und Ihrem Passwort
+    gesichert. Passwort und Wiederherstellungsschlüssel werden nirgendwohin
+    gesendet.
   </p>
 
   <h2>Wann eine App das Netz nutzt</h2>
   <p>
     Rememberize transkribiert Sprachnotizen auf Ihrem Gerät. Dafür lädt die App
-    das Spracherkennungsmodell einmalig beim ersten Gebrauch vom Anbieter des
-    Modells herunter. Dieser Download enthält keine Informationen über Sie, und
-    Ihre Aufnahmen werden nirgendwohin gesendet. Nach diesem einmaligen
+    das Spracherkennungsmodell einmalig beim ersten Gebrauch von Hugging Face
+    (huggingface.co) herunter, wo das Modell veröffentlicht ist. Wie bei jedem
+    Download erhält Hugging Face dabei Ihre IP-Adresse. Weitere Informationen
+    über Sie enthält der Download nicht, und Ihre Aufnahmen werden nirgendwohin
+    gesendet. Nach diesem einmaligen
     Download arbeitet die Transkription vollständig auf Ihrem Mac und benötigt
     kein Internet.
   </p>

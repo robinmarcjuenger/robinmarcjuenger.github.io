@@ -28,7 +28,7 @@
   <h1>Privacy</h1>
   <p class="lede">
     Applies to Loopetize, Pocketize: PDF Compressor, Pocketize: Video
-    Compressor, Rememberize, and this website. Last updated 23 October 2026.
+    Compressor, Rememberize, and this website. Last updated 25 October 2026.
   </p>
 
   <div class="note">
@@ -49,15 +49,19 @@
   <p>
     All processing happens locally on your device. Files are read from and
     written to locations you choose. Rememberize stores notes as plain Markdown
-    files in a folder you pick, so they stay readable without the app.
+    files in a folder you pick, so they stay readable without the app. Notes
+    you choose to encrypt are saved as .md.enc files, secured with AES-256 and
+    your password. The password and your recovery key are never sent
+    anywhere.
   </p>
 
   <h2>When an app uses the network</h2>
   <p>
     Rememberize transcribes voice notes on your device. To do that it downloads
-    its speech recognition model once from the model provider, the first time
-    you use transcription. That download contains no information about you, and
-    your recordings are never sent anywhere. After that first download,
+    its speech recognition model once from Hugging Face (huggingface.co), where
+    the model is published, the first time you use transcription. As with any
+    download, Hugging Face receives your IP address. The download contains no
+    other information about you, and your recordings are never sent anywhere. After that first download,
     transcription runs entirely on your Mac and needs no internet.
   </p>
   <p>
