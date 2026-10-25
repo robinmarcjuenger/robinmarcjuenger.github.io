@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Soporte, RMJ4PLAY</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+
+  <header class="site">
+    <a class="brand" href="index-es.html">RMJ4PLAY</a>
+    <span class="tagline">Apps de Robin Marc Jünger</span>
+  </header>
+
+  <nav class="site">
+    <a href="index-es.html">Apps</a>
+    <a href="support-es.html">Soporte</a>
+    <a href="privacy-es.html">Privacidad</a>
+    <a href="aviso-legal.html">Aviso legal</a>
+    <span class="langswitch">
+      <a href="support.html">EN</a>
+      <a href="support-de.html">DE</a>
+      <a href="support-es.html" class="active">ES</a>
+    </span>
+  </nav>
+
+  <h1>Soporte</h1>
+  <p class="lede">
+    Preguntas, errores y sugerencias van todos a la misma dirección. Son apps
+    pequeñas hechas por una sola persona, así que la respuesta te llega
+    directamente de mí. Puedes escribirme en español, inglés o alemán.
+  </p>
+
+  <div class="note">
+    <strong>Escribe a <a href="mailto:rmj4play@gmail.com">rmj4play@gmail.com</a></strong><br>
+    Indica qué app usas, el número de versión que aparece en la ventana
+    Acerca de y tu versión de macOS o Windows. Así la solución llega mucho
+    antes.
+  </div>
+
+  <h2>Preguntas frecuentes</h2>
+
+  <h3>¿Dónde están mis datos?</h3>
+  <p>
+    En tu ordenador. Ninguna de estas apps sube aquello en lo que trabajas, y
+    ninguna necesita una cuenta. Consulta la
+    <a href="privacy-es.html">página de privacidad</a>.
+  </p>
+
+  <h3>¿Tengo que pagar otra vez por las actualizaciones?</h3>
+  <p>
+    No. Son compras únicas, sin suscripción.
+  </p>
+
+  <h3>Loopetize, mi loop no se repite en el juego</h3>
+  <p>
+    Los puntos de loop viajan como etiquetas dentro del archivo, y no todos los
+    formatos pueden llevarlas. OGG y M4A llevan LOOPSTART y LOOPLENGTH, que es
+    lo que lee RPG Maker. WAV lleva en su lugar un bloque de sampler, que leen
+    Unity y el middleware de audio. AIFF, FLAC, ALAC y CAF no pueden llevar
+    puntos de loop. Para una versión de escritorio con RPG Maker, exporta en
+    OGG.
+  </p>
+
+  <h3>Loopetize, la grabación suena mucho más baja que la música</h3>
+  <p>
+    Es normal. Los micrófonos graban con margen, mientras que la música
+    terminada está normalizada cerca del nivel máximo. Selecciona el clip
+    grabado, abre Volume y pulsa Normalize.
+  </p>
+
+  <h3>Pocketize PDF, ya no puedo seleccionar el texto</h3>
+  <p>
+    Maximum reduction convierte cada página en una imagen para lograr tamaños
+    muy pequeños. Desactívalo o elige un tamaño objetivo mayor: en el modo
+    estándar el texto sigue nítido, seleccionable y con búsqueda, y solo se
+    reducen las imágenes del PDF.
+  </p>
+
+  <h3>Pocketize PDF, han desaparecido los marcadores o los campos de formulario</h3>
+  <p>
+    Los enlaces web se conservan, pero los marcadores y los campos de
+    formulario editables se eliminan al comprimir. El contenido rellenado sigue
+    visible. Tu archivo original nunca se modifica, así que guárdalo si todavía
+    necesitas editar el formulario.
+  </p>
+
+  <h3>Pocketize PDF, un archivo dice que está protegido con contraseña</h3>
+  <p>
+    Los PDF protegidos no se pueden comprimir. Abre el archivo en Vista
+    Previa, elige Archivo, Exportar, desactiva Encriptar, guarda una copia y
+    arrastra esa copia a Pocketize.
+  </p>
+
+  <h3>Pocketize Video, ¿qué ajuste debo elegir?</h3>
+  <p>
+    Empieza con 1080p. Reduce mucho la mayoría de los vídeos y se reproduce en
+    todas partes. Phone usa el formato HEVC, más eficiente, para archivos aún
+    más pequeños que los teléfonos y Mac actuales reproducen sin problema.
+    Original quality mantiene la resolución y solo comprime más el vídeo.
+    Email deja un vídeo lo más pequeño posible sin que deje de verse bien.
+  </p>
+
+  <h3>Pocketize Video, mi vídeo del iPhone se ve un poco distinto después</h3>
+  <p>
+    El iPhone graba en HDR por defecto. Pocketize convierte el HDR a colores
+    estándar para que el resultado se vea bien en cualquier pantalla y en
+    cualquier app. En una pantalla HDR, el vídeo comprimido puede parecer algo
+    menos brillante que el original.
+  </p>
+
+  <h3>Pocketize Video, ¿dónde están mis vídeos comprimidos?</h3>
+  <p>
+    En la carpeta Descargas, salvo que hayas elegido otra con Change en la
+    parte inferior de la ventana. Haz clic en Done junto a un vídeo para verlo
+    en el Finder.
+  </p>
+
+  <h3>Rememberize, ¿por qué la transcripción necesita internet la primera vez?</h3>
+  <p>
+    El modelo de voz se descarga una sola vez; después la transcripción
+    funciona en tu dispositivo y sin conexión. Tus grabaciones nunca se envían
+    a ningún sitio.
+  </p>
+
+  <h3>Rememberize, ¿dónde están mis notas?</h3>
+  <p>
+    En la carpeta que elegiste al abrir la app por primera vez, como archivos
+    .md normales que puedes abrir con cualquier editor de texto. Las notas
+    cifradas terminan en .md.enc.
+  </p>
+
+  <h3>Rememberize, he olvidado la contraseña de mis notas cifradas</h3>
+  <p>
+    Usa la clave de recuperación que guardaste al configurar el cifrado. Con
+    ella puedes abrir de nuevo tus notas y elegir una contraseña nueva. Sin la
+    contraseña ni la clave de recuperación, nadie puede abrir las notas
+    cifradas, tampoco yo, porque ninguna de las dos sale nunca de tu Mac. Las
+    notas que no cifraste no se ven afectadas.
+  </p>
+
+  <h3>Rememberize, ¿hay versión para iPhone o sincronización?</h3>
+  <p>
+    No. Rememberize es una app para Mac y no tiene sincronización ni servicio
+    en la nube propios. Tus notas se quedan como archivos en la carpeta que
+    elegiste.
+  </p>
+
+  <h3>Mac: la app no se puede abrir porque no se puede verificar al desarrollador</h3>
+  <p>
+    Esto aparece en versiones que aún no están notarizadas. Intenta abrir la
+    app una vez, luego ve a Ajustes del Sistema, Privacidad y seguridad,
+    desplázate hacia abajo y haz clic en Abrir igualmente. Las apps del Mac App
+    Store nunca muestran este mensaje.
+  </p>
+
+  <h3>Windows: «Windows protegió su PC»</h3>
+  <p>
+    Windows SmartScreen lo muestra con descargas nuevas de desarrolladores
+    pequeños que todavía no ha visto a menudo. Haz clic en Más información y
+    después en Ejecutar de todas formas. Solo hace falta una vez.
+  </p>
+
+  <h3>¿Qué sistema necesito?</h3>
+  <p>
+    En Mac, macOS 13 Ventura o posterior. Loopetize para Windows necesita
+    Windows 10 u 11 de 64 bits.
+  </p>
+
+  <h2>Informar de un error</h2>
+  <p>
+    Lo que más ayuda: qué hiciste, qué esperabas y qué pasó en su lugar. Si la
+    app se cerró, el informe de fallo de la app Consola, en Informes de
+    usuario, es muy útil. Las capturas de pantalla son bienvenidas.
+  </p>
+
+  <footer class="site">
+    © 2026 RMJ4PLAY - Robin Marc Jünger ·
+    <a href="index-es.html">Apps</a> ·
+    <a href="support-es.html">Soporte</a> ·
+    <a href="privacy-es.html">Privacidad</a> ·
+    <a href="aviso-legal.html">Aviso legal</a>
+  </footer>
+
+</div>
+</body>
+</html>
